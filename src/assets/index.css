@@ -1,0 +1,119 @@
+.main {
+  padding: 16px;
+}
+
+button {
+  height: 48px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+select {
+  height: 48px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: normal;
+  padding: 0;
+}
+
+.folder {
+  padding: 3px 0;
+  user-select: none;
+}
+
+.folder__children {
+  padding-left: 20px;
+}
+
+.folder__icon-collapse {
+  transform: rotate(-90deg);
+  position: absolute;
+  font-size: 20px;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.folder__icon-collapse_collapsed {
+  transform: rotate(0deg);
+}
+
+.folder__name {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: calc(100% - 30px);
+  cursor: grab;
+}
+
+.folder__header {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  position: relative;
+  line-height: 20px;
+}
+
+.folder__controls {
+  flex-shrink: 0;
+  display: flex;
+  font-size: 20px;
+  width: 30px;
+  justify-content: space-between;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.folder__empty {
+  position: absolute;
+  font-size: 20px;
+  top: 0;
+  left: 0;
+}
+
+.tree-view {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.file {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  position: relative;
+}
+
+.file__extension {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-size: 16px;
+  line-height: 16px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.file__name {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: calc(100% - 30px);
+  cursor: grab;
+  user-select: none;
+}
+
+.file__delete {
+  flex-shrink: 0;
+  display: flex;
+  font-size: 20px;
+  width: 30px;
+  justify-content: space-between;
+  padding-left: 10px;
+  cursor: pointer;
+  cursor: pointer;
+}
